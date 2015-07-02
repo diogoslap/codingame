@@ -1,4 +1,6 @@
-uto-generated code below aims at helping you parse
+<?php
+/**
+ * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
 
@@ -31,6 +33,7 @@ while (TRUE)
         $SI // The index of the node on which the Skynet agent is positioned this turn
     );
     $nodeMovementEnemy= array();
+    $nodeMovementVirus= array();
     forEach($links  as $link){
         forEach($link as $nodeEnemy){
             if($nodeEnemy != $SI && in_array($SI,$link)){
